@@ -1,0 +1,65 @@
+@import "main-layout.css";
+@import "mainlist.css";
+@import "list-group.css";
+
+#content-body{
+    margin-left: 181px;
+    padding: 22px;
+    background-color: white;
+}
+.title-box{
+    margin-bottom: 24px;
+}
+#title-input{
+    -web-kit-appearance:textfield;
+    -moz-appearance: none;
+    background-color: lightgray;
+    font-size: 1em;
+    height: 2.2em;
+    border-radius: 2px;
+    border:1px solid #c8cccf;
+    outline: 0;
+    padding: 0px 15px;
+}
+
+.section{
+    display: block;
+    border: 1px;
+}
+
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 25px 10px;
+}
+.submit-btn:hover{
+    color: white;
+    background-color: #c92027;
+    box-shadow:0px 0px 1px #c92027;
+}
+.submit-btn{
+    border:1px solid #c92027;
+    color: #c92027;
+    background-color: transparent;
+    background-image: none;
+}
+.cancel-btn{
+    border:1px solid gray;
+    color: gray;
+    background-color: transparent;
+    background-image: none;
+}
+.cancel-btn:hover{
+    color: white;
+    background-color: gray;
+    box-shadow: 0px 0px 1px gray;
+}

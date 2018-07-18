@@ -1,0 +1,32 @@
+/*左侧块*/
+#mainbody-left{
+    float: left;
+    width: 300px;
+    height: 500px;
+}
+.personaldata{
+    background-color: white;
+    height: 85px;
+    margin-bottom: 1px;
+}
+.headshow{
+    width: 50px;
+    margin: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
+.username{
+    font-size: 20px;
+    position: relative;
+    margin: 5px;
+    bottom: 50px;
+}
+.text-center{
+    display: inline-block;
+    margin:18px 25px;
+}
+.count{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}

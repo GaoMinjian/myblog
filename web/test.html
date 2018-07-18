@@ -1,0 +1,64 @@
+<html>
+	<head>
+		　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div>123</div>
+		<form>
+			<input type="text" name="" id="username">
+			<input type="text" name="" id="password">		
+			<input type="button" name="" value="123" onclick="zzz()">
+			<div id="ddd">312</div>
+
+			<input type="button" name="post" value="post" onclick="yyy()">
+		</form>
+	</body>
+	<script type="text/javascript">
+		function yyy (){
+		    var str = "email="+$('#username').val()+"&pwd="+$('#password').val()
+			console.log(str)
+			$.ajax({
+				type: "POST",
+				url: "http://10.230.206.10:3000/insert",
+				// dataType:'json',
+				data: "email="+$('#username').val()+"&pwd="+$('#password').val(),
+				success:function(data){
+					console.log("123"+data)
+				},
+                error:function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert(XMLHttpRequest.status);
+                    alert(XMLHttpRequest.readyState);
+                    alert(textStatus);
+                }
+			});
+		}
+		function zzz (){
+			let ddd = document.getElementById("ddd")
+			// let ddd = $("#ddd")
+			let username = document.getElementById("username").value
+			let password = document.getElementById("password").value
+			// $.ajax({
+			// 	url:"http://192.168.1.102:3000/test",
+			// 	success:function(result){
+   //      			console.log(result)
+   // 				}
+   // 			})
+			$.ajax({
+				url: "http://192.168.1.104:3000/test",
+			
+				success: function(res){
+					// console.log(ddd[0])
+					ddd.innerHTML = res[0].data
+					// document.getElementById("ddd").html = res
+					console.log(res)
+				},
+				error: function(err){q
+					console.log(err)
+				}
+			})
+		}
+		// function zzz (){
+		// 	console.log(123)
+		// }
+	</script>
+</html>

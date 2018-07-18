@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理文章</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="CSS/manage.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div id="mainhead">
+        <h1>My Blog</h1>
+        <p>some introduce</p>
+    </div>
+</header>
+<div id="mainlistdiv">
+    <nav>
+        <ul id="mainlist">
+            <li><a href="HomePage.html">首页</a></li>
+            <li><a href="#">文章</a> </li>
+            <li><a href="#">留言</a> </li>
+        </ul>
+    </nav>
+</div>
+<div id="mainbody">
+    <div id="list-group-box">
+        <div class="list-group-title">内容</div>
+        <div class="list-group">
+            <a href="publish.html" class="list-group-item">文章编写</a>
+            <a href="ArticleManage.html" class="list-group-item fixed">文章管理</a>
+        </div>
+        <div class="list-group-title">设置</div>
+        <div class="list-group">
+            <a href="#" class="list-group-item">博客设置</a>
+        </div>
+    </div>
+    <div id="articles-body">
+        <div class="heading">文章管理</div>
+        <div class="articles-nav">
+            <ul class="articles-nav-ul" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="ArticleManage.html" role="tab">全部</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" role="tab">已发表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" role="tab">草稿箱</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" role="tab">回收站</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="article-list-box">
+                <div class="article-item">
+                    <div class="article-item-title">
+                        <p>
+                            <a></a>
+                        </p>
+                    </div>
+                    <div class="article-item-info">
+                        <div class="item-info-left">
+                            <span class="time"></span>
+                            <span class="read-num"></span>
+                            <span class="comment-num"></span>
+                        </div>
+                        <div class="item-info-oper">
+                            <a class="oper check" href="javascript:void(0)">查看</a>
+                            <a class="oper" href="javascript:void(0)">禁止评论</a>
+                            <a class="oper" href="javascript:void(0)">置顶</a>
+                            <a class="oper delete" href="javascript:void(0)" onclick="deleteArticle(id)">删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="JS/manage.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" media="screen" href="CSS/main.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div id="mainhead">
+        <h1>My Blog</h1>
+        <p>some introduce</p>
+    </div>
+</header>
+<div id="mainlistdiv">
+    <nav>
+        <ul id="mainlist">
+            <li class="list-item"><a href="HomePage.html">首页</a></li>
+            <li class="list-item"><a href="#">文章</a> </li>
+            <li class="list-item"><a href="#">留言</a> </li>
+        </ul>
+    </nav>
+</div>
+<div id="mainbody">
+    <div id="mainbody-left">
+        <p style="font-size: 13px;margin: 8px 20px">个人资料</p>
+        <div class="personaldata">
+        <a href="#"><img class="headshow" src="Images/headshow.jpg"></a>
+        <a class="username" href="#">Gmj</a>
+        </div>
+        <div class="personaldata">
+            <dl class="text-center">
+                <dt><a href="HomePage.html">文章</a></dt>
+                <span class="count"><a href="#">100</a> </span>
+            </dl>
+            <dl class="text-center">
+                <dt>粉丝</dt>
+                <span class="count">200</span>
+            </dl>
+            <dl class="text-center">
+                <dt>评论</dt>
+                <span class="count">50</span>
+            </dl>
+        </div>
+    </div>
+    <div id="mainbody-right">
+        <div id="article-option">
+                <p>
+                    <span style="color: gray">排序：</span>
+                <a href="#">按更新时间</a>
+                <a href="#">按访问量</a>
+                </p>
+        </div>
+        <div class="article-list">
+            <div class="article">
+                <h4 class="article-title-box">
+                    <a class="article-title" href="javascript:void(0)">Mysql常用命令</a>
+                </h4>
+                <p class="content-box">
+                    <a class="content" href="javascript:void(0)">几个简单mysql命令，以后会继续补充</a>
+                </p>
+                <div class="article-info">
+                    <p>
+                        <span class="date">2018-07-4 15:33:20</span>
+                    </p>
+                    <p>
+                        <span class="read-num">阅读数：203</span>
+                    </p>
+                    <p>
+                        <span class="comment-num">评论数：1</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./JS/main.js"></script>
+</body>
+</html>

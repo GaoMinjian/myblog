@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表文章</title>
+    <link rel="stylesheet" media="screen" href="CSS/publishpage.css">
+    <link rel="stylesheet" type="text/css" href="styles/simditor.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="scripts/module.min.js"></script>
+    <script type="text/javascript" src="scripts/hotkeys.min.js"></script>
+    <script type="text/javascript" src="scripts/uploader.min.js"></script>
+    <script type="text/javascript" src="scripts/simditor.min.js"></script>
+</head>
+<body>
+<header>
+    <div id="mainhead">
+        <h1>My Blog</h1>
+        <p>some introduce</p>
+    </div>
+</header>
+<div id="mainlistdiv">
+    <nav>
+        <ul id="mainlist">
+            <li><a href="HomePage.html">首页</a></li>
+            <li><a href="#">文章</a> </li>
+            <li><a href="#">留言</a> </li>
+        </ul>
+    </nav>
+</div>
+<div id="mainbody">
+    <div id="list-group-box">
+        <div class="list-group-title">内容</div>
+        <div class="list-group">
+            <a href="publish.html" class="list-group-item fixed">文章编写</a>
+            <a href="ArticleManage.html" class="list-group-item">文章管理</a>
+        </div>
+        <div class="list-group-title">设置</div>
+        <div class="list-group">
+            <a href="#" class="list-group-item">博客设置</a>
+        </div>
+    </div>
+    <div id="content-body">
+        <div class="title-box">
+            <input type="text" id="title-input" placeholder="输入文章标题">
+        </div>
+        <div class="section">
+            <textarea id="editor" placeholder="输入文章内容" autofocus></textarea>
+        </div>
+        <div class="btns-box">
+            <input type="button" class="submit-btn btn" value="发布文章" onclick="publish()">
+            <input type="button" class="submit-btn btn" value="保存修改" onclick="">
+            <input type="button" class="cancel-btn btn" value="返回" onclick="">
+        </div>
+    </div>
+</div>
+<script src="JS/publish.js"></script>
+</body>
+</html>

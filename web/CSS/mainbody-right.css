@@ -1,0 +1,47 @@
+/*右侧块*/
+#mainbody-right{
+    margin-left: 310px;
+    height: 1500px;
+    position: relative;
+    top: 34px;
+}
+#article-option{
+    background-color: white;
+    height: 45px;
+    margin-bottom: 1px;
+}
+#article-option p{
+    float: right;
+    margin: 12px 20px;
+    font-size: 15px;
+}
+#article-option a{
+    margin: 0px 10px;
+}
+.article{
+    background-color: white;
+    padding: 18px 24px;
+    margin-bottom: 1px;
+    /*min-height: 80px;*/
+    height: inherit;
+}
+.article-title-box{
+    margin-bottom: 8px;
+    margin-top: 0px;
+    font-size: 22px;
+}
+.content-box{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    color: gray;
+    font-size: 15px;
+    margin: 0px;
+}
+.article-info p{
+    color: dimgray;
+    display: inline-block;
+    margin: 12px 30px 0px 0px;
+    font-size: 15px;
+}

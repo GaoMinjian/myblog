@@ -1,0 +1,35 @@
+
+#mainbody-right{
+    margin-left: 310px;
+    height: 1500px;
+    position: relative;
+    top: 34px;
+}
+.article-content-box{
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05)
+}
+.article-title{
+    word-break: break-all;
+    font-size: 26px;
+}
+.article-info-box{
+    border-bottom: 1px solid gainsboro;
+}
+.article-info{
+    color: gray;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+.float-right{
+    float: right !important;
+    margin-right: 20px;
+}
+#article-content{
+    text-indent: 2em;
+    font-size: 16px;
+    margin: 1em 0px;
+    line-height: 1.8em;
+
+}
